@@ -4,6 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
+import { ActionModule } from './action/action.module';
 
 @Module({
   imports: [
@@ -13,6 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     // MongooseModule.forRoot(`mongodb://${process.env.LOG_DB_HOST}:${process.env.LOG_DB_PORT}/test2`, 
     // {connectionName: 'test2'}),
     LayoutModule,
+    ActionModule
   ],
   controllers: [AppController],
   providers: [AppService],
