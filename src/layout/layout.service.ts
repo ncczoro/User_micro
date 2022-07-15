@@ -5,7 +5,7 @@ https://docs.nestjs.com/providers#services
 import { Inject, Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Layout } from 'src/interface/layout.interface';
+import { Layout } from 'src/layout/layout.interface';
 // import { Layout, LayoutDocument } from '../schema/layout.schema';
 
 @Injectable()

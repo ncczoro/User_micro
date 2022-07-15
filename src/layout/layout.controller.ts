@@ -3,7 +3,7 @@ https://docs.nestjs.com/controllers#controllers
 */
 
 import { Body, Controller, Delete, Get, Param, Post } from '@nestjs/common';
-import { Layout } from 'src/interface/layout.interface';
+import { Layout } from 'src/layout/layout.interface';
 // import { Layout } from '../schema/layout.schema';
 import { LayoutService } from './layout.service';
 
